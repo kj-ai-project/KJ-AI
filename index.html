@@ -1,1 +1,28 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KJ AI</title>
+</head>
+<body>
+
+  <h1>🤖 KJ AI</h1>
+  <p>My Advanced AI Assistant</p>
+
+  <input type="text" id="message" placeholder="Ask KJ AI...">
+  <button onclick="sendMessage()">Send</button>
+
+  <div id="response"></div>
+
+  <script>
+    function sendMessage() {
+      const message = document.getElementById("message").value;
+      document.getElementById("response").innerText =
+        "You asked: " + message;
+    }
+  </script>
+
+</body>
+</html>
